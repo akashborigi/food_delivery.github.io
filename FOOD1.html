@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<style>
+.heading{
+	font-family:Century Gothic;
+	font-size:40px;
+	font-style:normal;
+                  }
+                  
+.link{
+	font-family:Lucida Sans;
+	font-size:15px;
+	font-style:normal;
+         }
+
+.my_design{
+		font-family:Segoe UI;
+		font-size:30px;
+		font-style:normal;
+	  }
+
+.main123{
+	color:red;
+	font-family:arial;
+                   }
+
+input[type=text],input[type=password]{
+	width:50%;
+	padding:5px;
+	margin:5px 0 2px 0;
+	border:none;
+	background:#ffffb3;
+	border-radius:8px;
+            }
+
+
+.container{
+	background-image:url("serve.PNG");
+	background-repeat:no-repeat;
+	position:sticky;
+	right:10;
+	margin:50px;
+	max-width:700px;
+	padding:20px;
+	background-color:gainsboro;
+	}
+
+.bg-img{
+	background-image:url("food.jpg");
+	min-height:800px;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+                }
+
+.btn{
+	font-family:times new roman;
+	background-color:dodgerblue;
+	color:black;
+	padding:10px 15px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:50%;
+	opacity:1;
+	border-radius:5px;
+        }
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+</style>
+
+</head>
+
+<body class="bg-img">                                                             
+				
+<div>
+
+<form action="Login" class="container" method="post">
+
+<fieldset>
+
+<legend>HAVE YUMM IN YOUR HOME</legend>
+
+<pre>
+	         <label class="heading">BON_APPETIT</label>
+
+		<label for="UName" class="my_design"><strong>UserName</strong></label>
+		<input type="text" id="UName" name="UserName"  placeholder="Enter your Username"  required><br>
+
+		<label for="pswd" class="my_design"><strong>Password</strong></label>
+		<input type="password" id="pswd" name="password"  placeholder="Enter your Password" required  ><br>
+
+		<button type="submit"  class="btn" value="Login"><b>Login</b></button>
+
+			<a href="FOOD2.html" class="link">Create Account</a>
+</pre>
+</fieldset>
+</form>
+</div>
+</body>
+
+</html>

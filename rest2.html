@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+.bg-img
+{
+	background-image:url("mocktail2.PNG");
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:50% 150%;	
+	background-color:black;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+}
+
+.yepp {
+background-color: chocolate;
+font-family:Lucida Handwriting  ;
+}
+
+.btn{
+	font-family:times new roman;
+	background-color:coral;
+	color:black;
+	padding:10px 15px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:10%;
+	opacity:1;
+	border-radius:5px;
+        }
+
+
+.a{
+	font-family:ShelleyVolante BT ;
+	background-color:cornsilk;
+}
+
+</style>
+
+</head>
+
+<body class="bg-img">
+
+
+<form action="Rest2_Servlet" method="post">
+	<pre>
+
+	<label class="yepp"><b>Krusher</b></label>			
+	<input type="radio" name="getchilled" value="ChocoNut with Nutella"><label class="a">ChocoNut with Nutella-100rs</label>
+	<input type="radio" name="getchilled" value="ChocoNut With Oreo"><label class="a">ChocoNut With Oreo-100rs</label>
+	<input type="radio" name="getchilled" value="Vanilla Essence"><label class="a">Vanilla Essence-100rs</label>
+    	<input type="radio" name="getchilled" value="Straw Berry"><label class="a">Straw Berry-100rs</label>
+
+	<label class="yepp"><b>MockTail</b></label>			
+	<input type="radio" name="getchilled" value="Vanilla Blue"><label class="a">Vanilla Blue-120rs</label>
+	<input type="radio" name="getchilled" value="Lemon Mint"><label class="a">Lemon Mint-120rs</label>
+	<input type="radio" name="getchilled" value="Pomegranate Spritzer"><label class="a">Pomegranate Spritzer-120rs</label>
+    	<input type="radio" name="getchilled" value="Mojito"><label class="a">Mojito-120rs</label>
+	<input type="radio" name="getchilled" value="Classic Shirley Temple"><label class="a">Classic Shirley Temple-130rs</label>
+
+	<label class="yepp"><b>Ice Cream</b></label>			
+	<input type="radio" name="getchilled" value="Chocolate"><label class="a">Chocolate-70rs</label>
+	<input type="radio" name="getchilled" value="Vanilla"><label class="a">Vanilla-70rs</label>
+	<input type="radio" name="getchilled" value="StrawBerry"><label class="a">StrawBerry-70rs</label>
+    	<input type="radio" name="getchilled" value="ButterScotch"><label class="a">ButterScotch-70rs</label>
+	<input type="radio" name="getchilled" value="BlackCurrent"><label class="a">BlackCurrent-80rs</label>
+
+	<label class="yepp"><b>SoftDrinks</b></label>			
+	<input type="radio" name="getchilled" value="Coca-Cola"><label class="a">Coca-Cola-40rs</label>
+	<input type="radio" name="getchilled" value="Thumpsup"><label class="a">Thumpsup-50rs</label>
+	<input type="radio" name="getchilled" value="Maaza"><label class="a">Maaza-50rs</label>
+    	<input type="radio" name="getchilled" value="Sprite"><label class="a">Sprite-50rs</label>
+	<input type="radio" name="getchilled" value="RedBull"><label class="a">RedBull-100rs</label>
+
+	<button type="submit"  class="btn" value="enter"><b>ADD</b></button>
+	
+	</pre>
+</form>
+</body>
+</html>

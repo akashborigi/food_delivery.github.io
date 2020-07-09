@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.yepp{
+	font-family:harrington;
+	background-color:papayawhip;
+	font-size:20px;
+}
+
+.main{
+	font-family:gothicE;
+	background-color:rosybrown;
+	font-size:30px;
+}
+
+label
+{
+	font-family:timesnewroman;
+}
+
+.bg-img
+{
+	background-image:url("biryani2.PNG"),url("biriyani1.PNG");
+	background-position:left center,right center;
+	background-repeat:no-repeat;
+	background-size:50% 100%;	
+}
+
+.btn{
+	font-family:times new roman;
+	background-color:olive;
+	color:black;
+	padding:10px 15px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:10%;
+	opacity:1;
+	border-radius:5px;
+        }
+
+</style>
+
+</head>
+
+<body class="bg-img">
+
+	<form action="Rest1_Servlet" method="post">
+
+<pre>
+	
+	
+	<label class="main">  Chicken Recipes  </label>
+
+	<label for="val1" class="yepp">Chicken Fry Biriyani-100</label>
+  	<input type="radio" id="val1" name="barkaas" value="Chicken Fry Biriyani">
+
+
+
+	<label for="val2" class="yepp">Chicken Dhum Biriyani-110</label>
+	<input type="radio" id="val2" name="barkaas" value="Chicken Dhum Biriyani">
+	
+	
+	
+	<label for="val3" class="yepp">Chicken gravey biriyani-120</label>
+	<input type="radio" id="val3" name="barkaas" value="Chicken gravey biriyani">
+
+
+	<label class="main">  Mutton Recipes  </label>
+
+	<label for="val4" class="yepp">Mutton fry biriyani-150</label>
+	<input type="radio" id="val4" name="barkaas" value="Mutton fry biriyani">
+	
+
+
+	
+	<label for="val5" class="yepp">Mutton Dhum Biriyani-160</label>
+	<input type="radio" id="val5" name="barkaas" value="Mutton Dhum Biriyani">
+		
+
+	<label for="val6" class="yepp">Mutton gravey Biriyani-170</label>
+	<input type="radio" id="val6" name="barkaas" value="Mutton gravey Biriyani">
+	
+
+
+	<label class="main">  Sea Recipes  </label>
+
+	<label for="val7" class="yepp">Prawn Biriyani-200</label>
+	<input type="radio" id="val7" name="barkaas" value="Prawn Biriyani">
+		
+
+	
+
+
+	<button type="submit"  class="btn" value="enter"><b>ADD</b></button>
+
+</pre>
+	</form>
+
+</body>
+</html>

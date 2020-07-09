@@ -1,0 +1,150 @@
+<html>
+
+<head>
+
+<style>
+
+legend{
+	font-family:Impact;
+              }
+
+.heading{
+	font-family:Century Gothic;
+	font-size:40px;
+	font-style:normal;
+                  }
+
+.link{
+	font-family:Lucida Console;
+	font-size:15px;
+	font-style:normal;
+         }
+
+.my_design{
+		font-family:Impact;
+		font-size:30px;
+		font-style:normal;
+	  }
+
+.main123{
+	color:red;
+	font-family:arial;
+                   }
+
+input[type=text],input[type=password]{
+	width:50%;
+	padding:5px;
+	margin:10px 0 6px 0;
+	border:none;
+	background:cyan;
+	border-radius:10px;
+            }
+
+
+.container{
+	position:sticky;
+	right:10;
+	margin:100px;
+	max-width:500px;
+	padding:50px;
+	background-color:#ffffb3;
+	}
+
+.bg-img{
+	background-image:url("spec1.PNG"),url("food2.PNG");
+	background-position:left center,right center;
+	background-repeat:no-repeat;
+	background-size:50% 100%,50% 100%;
+	background-color:#d2691e;
+                }
+
+.btn{
+	font-family:times new roman;
+	background-color:dodgerblue;
+	color:black;
+	padding:10px 15px;
+	margin:8px 0;
+	border:none;
+	cursor:pointer;
+	width:50%;
+	opacity:1;
+	border-radius:5px;
+        }
+        
+</style>
+      
+<script> 
+function validate()
+{ 
+     var email = document.form.Email.value;
+     var UserName = document.form.UserName.value; 
+     var password = document.form.password.value;
+     var conpassword= document.form.repassword.value;
+     
+     
+     if (email==null || email=="")
+     { 
+     alert("Email can't be blank"); 
+     return false; 
+     }
+     else if (username==null || username=="")
+     { 
+     alert("Username can't be blank"); 
+     return false; 
+     }
+     else if(password.length<8)
+     { 
+     alert("Password must be at least 8 characters long."); 
+     return false; 
+     } 
+     else if (password!=conpassword)
+     { 
+     alert("Confirm Password should match with the Password"); 
+     return false; 
+     } 
+ } 
+</script> 
+
+
+</head>
+
+<body class="bg-img">                                                             
+				
+<div>
+
+<form action="register" class="container" method="post" onsubmit="return validate()">
+
+<fieldset>
+
+<legend>WELCOME REGISTER AND ORDER</legend>
+
+<pre>
+	         <label class="heading">BON_APPETIT</label>
+
+	<label for="UName" class="my_design"><strong>UserName</strong></label>
+	<input type="text" id="UName" name="UserName"  placeholder="Enter your Username"  required><br>
+	
+	<label for="Email" class="my_design"><strong>Email</strong></label>
+	<input type="text" id="Email" name="Email"  placeholder="Enter your Email"  required><br>
+	
+	<label for="pswd" class="my_design"><strong>Password</strong></label>
+	<input type="password" id="pswd" name="password"  placeholder="Enter your Password" required  ><br>
+
+	<label for="pswd1" class="my_design"><strong>Confirm Password</strong></label>
+	<input type="password" id="pswd1" name="repassword"  placeholder="Enter your Password" required  ><br>
+
+	<button type="submit"  class="btn" value="register"><b>Register</b></button>
+
+			<a href="FOOD1.html" class="link">Click here to Login</a>
+
+</pre>
+
+</fieldset>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
